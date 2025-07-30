@@ -2,72 +2,76 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nelinfo - Votre info en ligne</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f7fa;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      background: #005f73;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    main {
-      flex: 1;
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h1 {
-      margin-top: 0;
-    }
-    a.button {
-      background: #0a9396;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-block;
-      margin-top: 15px;
-    }
-    a.button:hover {
-      background: #94d2bd;
-      color: #005f73;
-    }
-    footer {
-      background: #94d2bd;
-      text-align: center;
-      padding: 10px;
-      font-size: 0.9rem;
-      color: #001219;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEL INFO - L'expert IT à vos côtés</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-    <h1>Nelinfo</h1>
-    <p>Votre source d'informations en ligne</p>
+    <img src="images/logo-nelinfo.png" alt="Logo NEL INFO" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#activite">Activité</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#commentaires">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <h2>Bienvenue sur Nelinfo</h2>
+
+  <section id="accueil" class="hero">
+    <h1>L'expert IT à vos côtés</h1>
+    <p>Parlons de votre IT, construisons son avenir</p>
+  </section>
+
+  <section id="activite">
+    <h2>Notre métier</h2>
     <p>
-      Ce site est en construction. Revenez bientôt pour découvrir nos dernières
-      actualités, conseils et services.
+      <strong>NEL INFO</strong> est une société informatique spécialisée dans la mise en place,
+      la gestion et l’optimisation d’infrastructures systèmes et réseaux.
     </p>
-    <a href="mailto:contact@nelinfo.fr" class="button">Contactez-nous</a>
-  </main>
+    <p>
+      Nous accompagnons les entreprises dans leurs projets IT en garantissant performance,
+      sécurité et évolutivité de leurs systèmes d’information.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Nos Services</h2>
+    <ul>
+      <li>Conception et déploiement d'infrastructures réseau (LAN, WAN, Wi-Fi)</li>
+      <li>Administration de systèmes Windows, Linux, virtualisation (VMware, Hyper-V)</li>
+      <li>Supervision, sécurité informatique, sauvegardes, audits</li>
+      <li>Infogérance et support technique</li>
+    </ul>
+  </section>
+
+  <section id="commentaires">
+    <h2>Ce que disent nos clients</h2>
+    <div class="commentaire">
+      <p>"Une expertise remarquable en infrastructure IT. NEL INFO nous accompagne depuis 3 ans avec réactivité." — <strong>Arnaud, DSI</strong></p>
+    </div>
+    <div class="commentaire">
+      <p>"Migration vers le cloud maîtrisée de A à Z. Merci pour votre rigueur." — <strong>Julie, Dirigeante PME</strong></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre email" required />
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
   <footer>
-    &copy; 2025 Nelinfo - Tous droits réservés
+    <p>&copy; 2025 NEL INFO - L'expert IT à vos côtés</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
