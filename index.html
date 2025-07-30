@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Bienvenue sur mon site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nelinfo - Votre info en ligne</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: #005f73;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      flex: 1;
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    a.button {
+      background: #0a9396;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 15px;
+    }
+    a.button:hover {
+      background: #94d2bd;
+      color: #005f73;
+    }
+    footer {
+      background: #94d2bd;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+      color: #001219;
+    }
+  </style>
 </head>
 <body>
-  <h1>Mon site Cloudflare Pages</h1>
-  <p>Site gratuit hébergé avec domaine personnalisé !</p>
+  <header>
+    <h1>Nelinfo</h1>
+    <p>Votre source d'informations en ligne</p>
+  </header>
+  <main>
+    <h2>Bienvenue sur Nelinfo</h2>
+    <p>
+      Ce site est en construction. Revenez bientôt pour découvrir nos dernières
+      actualités, conseils et services.
+    </p>
+    <a href="mailto:contact@nelinfo.fr" class="button">Contactez-nous</a>
+  </main>
+  <footer>
+    &copy; 2025 Nelinfo - Tous droits réservés
+  </footer>
 </body>
 </html>
