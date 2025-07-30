@@ -1,0 +1,23 @@
+:root {
+    --bleu-fonce: #1a3057;
+    --bleu-moyen: #215a76;
+    --bleu-clair: #4b9aa2;
+    --gris-clair: #f4f4f4;
+}
+
+.hero {
+    background-color: var(--bleu-fonce);
+    color: white;
+    text-align: center;
+    padding: 4em 2em;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.3em;
+    color: var(--bleu-clair);
+}
