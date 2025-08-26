@@ -133,12 +133,12 @@
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
-  emailjs.init("VOTRE_USER_ID"); // fourni par EmailJS
+  emailjs.init("bj9tNyAokcSgbBTz0"); // fourni par EmailJS
 
   document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    emailjs.sendForm('VOTRE_SERVICE_ID', 'VOTRE_TEMPLATE_ID', this)
+    emailjs.sendForm('service_1rsuvho', 'SMTP server', this)
       .then(() => alert('Email envoyé !'))
       .catch(err => alert('Erreur: ' + JSON.stringify(err)));
   });
