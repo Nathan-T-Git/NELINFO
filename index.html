@@ -127,6 +127,17 @@
 			  
 			  
 <script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
+  
+  
+  <!-- Ton formulaire -->
+  <form id="contact-form">
+    <input type="text" name="nom" placeholder="Nom" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Message"></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+  
+  
   <script>
     (function(){
        emailjs.init("bj9tNyAokcSgbBTz0"); // ta clé publique EmailJS
