@@ -129,31 +129,37 @@
 <script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
   
   
-  <!-- Ton formulaire -->
-  <form id="contact-form">
-    <input type="text" name="nom" placeholder="Nom" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" placeholder="Message"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
+  <form id="contact">
+  <input type="text" name="name" placeholder="Nom" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message"></textarea>
+  <button type="submit">Envoyer</button>
+</form>
+
+<!-- Script EmailJS -->
+<script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
+<script>
+  (function(){
+     emailjs.init("bj9tNyAokcSgbBTz0"); // Mets ta clé publique EmailJS ici
+  })();
+
+  document.getElementById('contact').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_1rsuvho", "SMTP server", this)
+      .then(() => {
+        alert("Message envoyé avec succès !");
+        this.reset(); // vide le formulaire
+      }, (error) => {
+        alert("Erreur: " + JSON.stringify(error));
+      });
+  });
+</script>
+
+
   
   
-  <script>
-    (function(){
-       emailjs.init("bj9tNyAokcSgbBTz0"); // ta clé publique EmailJS
-    })();
-
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      emailjs.sendForm("service_1rsuvho", "SMTP server", this)
-        .then(() => {
-          alert("Message envoyé avec succès !");
-        }, (error) => {
-          alert("Erreur: " + JSON.stringify(error));
-        });
-    });
-  </script>
+    
 			  
 			  
 			  
